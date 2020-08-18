@@ -1,6 +1,7 @@
 package com.yedam.classes;
 
 public class Friend {
+	
 	//필드
 	private String name;
 	private int age;
@@ -12,6 +13,7 @@ public class Friend {
 		this.age = age;
 		this.phone = phone;
 	}
+	public Friend() {}
 	//메소드
 	public String getName() {
 		return name;
@@ -30,6 +32,11 @@ public class Friend {
 	}
 	public void setPhone(String phone) {
 		this.phone = phone;
+	}
+	@Override
+	public String toString() {
+		return "친구 이름: "+ this.name 
+				+"연락처: "+ this.phone;
 	}
 	
 	
