@@ -8,7 +8,7 @@ public class Exercise006 {
 				{78, 83, 93, 87, 88}
 		};
 		
-		a[0][0]= 95
+		a[0][0]=95
 		a[2][0]=78
 		a[1][2]=96
 		System.out.println(array.length);

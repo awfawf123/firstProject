@@ -44,9 +44,10 @@ public class EmpDAO {
 		
 	}
 	//수정
-	public void changeEmp(int eId, int salary) {
+	public void changeEmp(Employee emp) {
 		Connection conn = DBConnection.getConnection();
-		String sql = "update emp_temp set salary = "+" salary + employee_id";
+		String sql = "update emp_temp set salary = "+ emp.getSalary() +
+				" where employee_id = " + emp.getEmployeeId();
 		try {
 			PreparedStatement psmt = conn.prepareStatement(sql);
 			int r = psmt.executeUpdate();
