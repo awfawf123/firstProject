@@ -17,7 +17,7 @@ public class StringCharAtExample {
 		}else {
 			System.out.println("여자");
 		}
-		String str1 = "010102-345678";
+//		String str1 = "010102-345678";
 		System.out.println(str1.replace("-", "").charAt(6));
 		if(str1.replace("-", "").charAt(6) == '3') {
 			System.out.println("남자");
