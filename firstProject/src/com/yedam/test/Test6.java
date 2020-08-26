@@ -11,3 +11,4 @@ public class Test6 {
 		System.out.println(var);
 
 }
+}
